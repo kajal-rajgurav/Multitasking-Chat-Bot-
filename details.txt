@@ -1,0 +1,1 @@
+this is an chat bot project works on gemini 1.5 flash model.

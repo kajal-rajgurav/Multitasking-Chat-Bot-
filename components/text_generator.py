@@ -185,7 +185,7 @@ def render_text_generator():
         
         # Show recent generations (last 3)
         for i, generation in enumerate(reversed(st.session_state.text_generator_history[-3:])):
-            with st.expander(f"Generation {len(st.session_state.text_generator_history) - i}: {generation['prompt'][:50]}...", key=f"history_expander_{i}"):
+            with st.expander(f"Generation {len(st.session_state.text_generator_history) - i}: {generation['prompt'][:50]}..."):
                 
                 # Show generation details
                 col1, col2, col3 = st.columns(3)
